@@ -92,5 +92,12 @@ class TestRemoverPost(unittest.TestCase):
         self.assertEqual(status, 200)
 
 
+
+class TestBuscarUsuario(unittest.TestCase):
+    def test_busca_usuario_existente(self):
+        status, usuario = requisicao("GET", "/users/1")
+        self.assertEqual(status, 200)
+        self.assertEqual(usuario["id"], 1)
+        
 if __name__ == "__main__":
     unittest.main()
