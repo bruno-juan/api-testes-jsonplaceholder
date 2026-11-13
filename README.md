@@ -10,7 +10,7 @@ Projeto de automação de testes de API, criado para praticar testes funcionais 
 ## Como rodar
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/bruno-juan/api-testes-jsonplaceholder.git
 cd api-testes-jsonplaceholder
 python -m unittest discover -s tests -v
 ```
